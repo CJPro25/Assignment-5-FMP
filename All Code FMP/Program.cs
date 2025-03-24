@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            /*
             Console.WriteLine(howManySeconds(2));// ➞ 7200
             Console.WriteLine(howManySeconds(10));// ➞ 36000
             Console.WriteLine(howManySeconds(24));// ➞ 86400
@@ -31,6 +32,13 @@
             Console.WriteLine(circuitPower(480, 20));// ➞ 9600
 
             int circuitPower(int a, int b) { return a * b; }
+            */
+
+            int HowManyStickers(int a){return (a * a * 6);}
+
+            Console.WriteLine(HowManyStickers(1));
+            Console.WriteLine(HowManyStickers(2));
+            Console.WriteLine(HowManyStickers(3));
         }
     }
 }
