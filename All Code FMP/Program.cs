@@ -32,13 +32,26 @@
             Console.WriteLine(circuitPower(480, 20));// ➞ 9600
 
             int circuitPower(int a, int b) { return a * b; }
-            */
+            
 
             int HowManyStickers(int a){return (a * a * 6);}
 
-            Console.WriteLine(HowManyStickers(1));
-            Console.WriteLine(HowManyStickers(2));
-            Console.WriteLine(HowManyStickers(3));
+            Console.WriteLine(HowManyStickers(1)); // 6
+            Console.WriteLine(HowManyStickers(2)); // 24
+            Console.WriteLine(HowManyStickers(3)); // 54
+            */
+
+            string[] names = { "" };
+            string input = "";
+
+            while(input != "Exit")
+            {
+                Console.WriteLine("Enter a name: ");
+                input = Console.ReadLine();
+                names = new string[] { input };
+                //idk some stuff
+            }
+
         }
     }
 }
