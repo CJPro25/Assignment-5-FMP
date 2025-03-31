@@ -39,7 +39,7 @@
             Console.WriteLine(HowManyStickers(1)); // 6
             Console.WriteLine(HowManyStickers(2)); // 24
             Console.WriteLine(HowManyStickers(3)); // 54
-            */
+            
 
             string[] names = { "" };
             string input = "";
@@ -51,7 +51,15 @@
                 names = new string[] { input };
                 //idk some stuff
             }
+            */
 
+            string[] Alist = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+
+            Console.WriteLine("The given list: " + Alist[0] + ", " + Alist[1] + ", " + Alist[2] + ", " + Alist[3] + ", " + Alist[4] + ", " + Alist[5] + ", " + Alist[6]);
+
+            Console.WriteLine("The first element of the list: " + Alist[0]);
+
+            Console.WriteLine("The last element of the list: " + Alist[Alist.Length - 1]);
         }
     }
 }
