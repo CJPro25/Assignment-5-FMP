@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("All Code FMP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbd31879515386559d34f76ee88afb082a74ec66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c9daf2deacdd3ad2e5d74fbb7e1b663cc413006")]
 [assembly: System.Reflection.AssemblyProductAttribute("All Code FMP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("All Code FMP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

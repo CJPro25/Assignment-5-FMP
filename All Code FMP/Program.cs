@@ -51,7 +51,7 @@
                 names = new string[] { input };
                 //idk some stuff
             }
-            */
+            
 
             string[] Alist = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
@@ -60,6 +60,9 @@
             Console.WriteLine("The first element of the list: " + Alist[0]);
 
             Console.WriteLine("The last element of the list: " + Alist[Alist.Length - 1]);
-        }
+            */
+
+            Console.WriteLine(DateTime.Now);
+        }   
     }
 }
