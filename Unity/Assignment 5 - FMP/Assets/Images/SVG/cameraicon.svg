@@ -1,0 +1,12 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+ <title>CameraIcon</title>
+
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path stroke="#000" id="svg_50" d="m-49.35894,125.84969l58.35429,0l0,0c7.64458,0 13.84172,30.66429 13.84172,68.49058c0,37.82628 -6.19714,68.49055 -13.84172,68.49055l-58.35429,0l0,0c-7.64457,0 -13.84172,-30.66427 -13.84172,-68.49055c0,-37.82631 6.19715,-68.49058 13.84172,-68.49058z" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" fill="#000000"/>
+  <rect id="svg_52" height="27.92453" width="114.71698" y="177.2327" x="31.69811" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-38.8464 167.961 168.678)" stroke="#000" id="svg_53" height="29.43396" width="79.28347" y="153.96101" x="128.31973" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" fill="#000000"/>
+  <rect transform="rotate(50.3671 237.736 122.327)" id="svg_54" height="71.32075" width="190.18867" y="86.66666" x="142.6415" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#000000"/>
+  <path transform="rotate(49.8993 315.711 213.465)" stroke="#000" id="svg_55" d="m296.7046,194.80535l19.00604,0l0,0c10.49675,0 19.00604,8.35409 19.00604,18.65938c0,10.30529 -8.50929,18.65938 -19.00604,18.65938l-19.00604,0l0,-37.31875z" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" fill="#000000"/>
+ </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="311" height="390" xmlns="http://www.w3.org/2000/svg">
+ <title>DoorIcon</title>
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <rect id="svg_6" height="300" width="40" y="48.33498" x="33.99997" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#000000"/>
+  <rect id="svg_8" height="32" width="231.99999" y="47.33498" x="35.99997" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#000000"/>
+  <rect id="svg_10" height="300" width="40" y="48.33498" x="228" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#000000"/>
+  <path transform="rotate(173.301 160.01 223.412)" stroke="#000" id="svg_12" d="m92.88521,351.99246l26.8499,-257.16178l107.39958,0l-26.8499,257.16178l-107.39958,0z" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" fill="#000000"/>
+  <ellipse ry="10" rx="10" id="svg_14" cy="219.33497" cx="130.49997" stroke-dasharray="5,2,2,2,2,2" stroke-width="0.01" stroke="#000" fill="#ffffff"/>
+ </g>
+</svg>
