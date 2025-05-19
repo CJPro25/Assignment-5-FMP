@@ -1,7 +1,6 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq.Expressions;
+using UnityEngine;
 
 public class AStarManager : MonoBehaviour
 {
@@ -22,14 +21,14 @@ public class AStarManager : MonoBehaviour
         }
 
         start.gScore = 0;
-        start.hScore = Vector2.Distance(start.transform.position, end.transform.position);
+        start.hScore = Vector3.Distance(start.transform.position, end.transform.position);
         openSet.Add(start);
 
-        while(openSet.Count > 0)
+        while (openSet.Count > 0)
         {
-            int lowestF = default;
+            int lowestF = 0;
 
-            for(int i = 1; i < openSet.Count; i++)
+            for (int i = 1; i < openSet.Count; i++)
             {
                 if (openSet[i].FScore() < openSet[lowestF].FScore())
                 {
@@ -40,13 +39,12 @@ public class AStarManager : MonoBehaviour
             Node currentNode = openSet[lowestF];
             openSet.Remove(currentNode);
 
-            if(currentNode == end)
+            if (currentNode == end)
             {
                 List<Node> path = new List<Node>();
-
                 path.Insert(0, end);
 
-                while(currentNode != start)
+                while (currentNode != start)
                 {
                     currentNode = currentNode.cameFrom;
                     path.Add(currentNode);
@@ -56,15 +54,15 @@ public class AStarManager : MonoBehaviour
                 return path;
             }
 
-            foreach(Node connectedNode in currentNode.connections)
+            foreach (Node connectedNode in currentNode.connections)
             {
-                float heldGscore = currentNode.gScore + Vector2.Distance(currentNode.transform.position, connectedNode.transform.position);
+                float heldGScore = currentNode.gScore + Vector3.Distance(currentNode.transform.position, connectedNode.transform.position);
 
-                if(heldGscore < connectedNode.gScore)
+                if (heldGScore < connectedNode.gScore)
                 {
                     connectedNode.cameFrom = currentNode;
-                    connectedNode.gScore = heldGscore;
-                    connectedNode.hScore = Vector2.Distance(connectedNode.transform.position, end.transform.position);
+                    connectedNode.gScore = heldGScore;
+                    connectedNode.hScore = Vector3.Distance(connectedNode.transform.position, end.transform.position);
 
                     if (!openSet.Contains(connectedNode))
                     {
@@ -75,5 +73,48 @@ public class AStarManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    public Node FindNearestNode(Vector3 pos)
+    {
+        Node foundNode = null;
+        float minDistance = float.MaxValue;
+
+        foreach (Node node in FindObjectsOfType<Node>())
+        {
+            float currentDistance = Vector3.Distance(pos, node.transform.position);
+
+            if (currentDistance < minDistance)
+            {
+                minDistance = currentDistance;
+                foundNode = node;
+            }
+        }
+
+        return foundNode;
+    }
+
+    public Node FindFurthestNode(Vector3 pos)
+    {
+        Node foundNode = null;
+        float maxDistance = 0f;
+
+        foreach (Node node in FindObjectsOfType<Node>())
+        {
+            float currentDistance = Vector3.Distance(pos, node.transform.position);
+
+            if (currentDistance > maxDistance)
+            {
+                maxDistance = currentDistance;
+                foundNode = node;
+            }
+        }
+
+        return foundNode;
+    }
+
+    public Node[] AllNodes()
+    {
+        return FindObjectsOfType<Node>();
     }
 }
