@@ -4,7 +4,7 @@ public class Door1Control : MonoBehaviour
 {
     Animator animator;
     public bool Door;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         animator = GetComponent<Animator>();

@@ -39,3 +39,5 @@ public class NPC_Controller : MonoBehaviour
         }
     }
 }
+
+
