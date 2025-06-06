@@ -15,7 +15,6 @@ com.unity.toolchain.win-x86_64-linux-x86_64@2.0.10
 com.unity.ugui@2.0.0
 com.unity.vectorgraphics@2.0.0-preview.25
 com.unity.visualscripting@1.9.5
-org.khronos.unitygltf@2.16.1
 com.unity.modules.accessibility@1.0.0
 com.unity.modules.ai@1.0.0
 com.unity.modules.androidjni@1.0.0
@@ -48,4 +47,5 @@ com.unity.modules.video@1.0.0
 com.unity.modules.vr@1.0.0
 com.unity.modules.wind@1.0.0
 com.unity.modules.xr@1.0.0
+org.khronos.unitygltf@2.16.1
 com.unity.template.urp-blank@17.0.11
